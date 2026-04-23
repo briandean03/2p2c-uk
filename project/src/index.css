@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes orbit-dot {
+    0% {
+      transform: rotate(0deg) translateX(60px);
+    }
+    100% {
+      transform: rotate(360deg) translateX(60px);
+    }
+  }
+
+  @keyframes slide-horizontal {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
+  }
+
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scatter {
+    0% {
+      opacity: 0;
+      transform: translate(var(--tw-translate-x, 0), var(--tw-translate-y, 0)) scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(var(--tw-translate-x, 0), var(--tw-translate-y, 0)) scale(1);
+    }
+  }
+
+  @keyframes target-slide-blink {
+    0% {
+      transform: translateX(-400px);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    55% {
+      transform: translateX(0);
+      opacity: 0.3;
+    }
+    60% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    65% {
+      transform: translateX(0);
+      opacity: 0.3;
+    }
+    70%, 100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-orbit-dot {
+    animation: orbit-dot 4s linear infinite;
+  }
+
+  .animate-orbit-dot-2 {
+    animation: orbit-dot 4s linear infinite;
+    animation-delay: 1s;
+  }
+
+  .animate-orbit-dot-3 {
+    animation: orbit-dot 4s linear infinite;
+    animation-delay: 2s;
+  }
+
+  .animate-orbit-dot-4 {
+    animation: orbit-dot 4s linear infinite;
+    animation-delay: 3s;
+  }
+
+  .animate-slide {
+    animation: slide-horizontal 20s linear infinite;
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+
+  .animate-target-slide-blink {
+    animation: target-slide-blink 6s ease-in-out infinite;
+  }
+}
