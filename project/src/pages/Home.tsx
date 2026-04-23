@@ -237,7 +237,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-20">
             <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold mb-6 text-gray-900">Al Applications in Construction</h3>
+              <h3 className="text-3xl font-bold mb-6 text-gray-900">AI Applications in Construction</h3>
               <p className="text-gray-600 mb-6 leading-relaxed max-w-3xl mx-auto">
                 2p2c is one the first companies in the world to use AI advanced technology
                 to gather and manage mega size data during the preparation of expert
