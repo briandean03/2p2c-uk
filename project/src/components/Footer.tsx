@@ -1,4 +1,12 @@
-import { Facebook, Twitter, Instagram, Linkedin, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, MapPin } from 'lucide-react';
+
+function XIcon({ size = 24 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.857L1.254 2.25h6.233l4.263 5.638L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/>
+    </svg>
+  );
+}
 
 export default function Footer() {
   return (
@@ -38,16 +46,16 @@ export default function Footer() {
             </div>
 
             <div className="flex gap-4 mt-6">
-              <a href="#" className="text-white hover:text-[#7C4DFF] transition-colors">
+              <a href="https://www.facebook.com/pages/2P2C%20Project%20Management%20Consultants/2014205831930539/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#7C4DFF] transition-colors">
                 <Facebook size={24} />
               </a>
               <a href="#" className="text-white hover:text-[#7C4DFF] transition-colors">
-                <Twitter size={24} />
+                <XIcon size={24} />
               </a>
               <a href="#" className="text-white hover:text-[#7C4DFF] transition-colors">
                 <Instagram size={24} />
               </a>
-              <a href="#" className="text-white hover:text-[#7C4DFF] transition-colors">
+              <a href="https://www.linkedin.com/company/2p2c-project-management-consultants" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#7C4DFF] transition-colors">
                 <Linkedin size={24} />
               </a>
             </div>
