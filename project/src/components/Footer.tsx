@@ -52,7 +52,7 @@ export default function Footer() {
               <a href="#" className="text-white hover:text-[#7C4DFF] transition-colors">
                 <XIcon size={24} />
               </a>
-              <a href="#" className="text-white hover:text-[#7C4DFF] transition-colors">
+              <a href="https://www.instagram.com/2p2c_pmc/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#7C4DFF] transition-colors">
                 <Instagram size={24} />
               </a>
               <a href="https://www.linkedin.com/company/2p2c-project-management-consultants" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#7C4DFF] transition-colors">
