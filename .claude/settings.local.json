@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git ls-tree HEAD --name-only)",
+      "Bash(git ls-tree HEAD project)",
+      "Bash(git rm --cached project)",
+      "Bash(git add project/)",
+      "Bash(git push origin main)"
+    ]
+  }
+}

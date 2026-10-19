@@ -87,7 +87,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
   return (
     <div className="min-h-screen">
-      <section className="relative bg-black pt-[90px] overflow-hidden" style={{ minHeight: 'calc(100vh - 100px)' }}>
+      <section className="relative bg-black pt-[90px] overflow-hidden" style={{ minHeight: 'calc(100vh - 200px)' }}>
         <video
           autoPlay
           loop
@@ -133,25 +133,29 @@ export default function Home({ onNavigate }: HomeProps) {
 
         <div className="max-w-7xl mx-auto px-6 py-20 relative z-10">
           <div className="animate-fade-in-up mb-12">
-            <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-4 text-white">
-              Technology Driven
+            <h1 className="text-6xl lg:text-7xl font-bold leading-tight mb-4 text-white pt-12 lg:pt-20">
+              Planning + Contract
               <br />
-              Project Management
+              + Claims =
             </h1>
           </div>
 
-          <div className="text-white space-y-8 text-lg max-w-2xl">
+          <div className="text-white space-y-6 text-lg max-w-2xl">
             <div className="flex items-start gap-4">
               <Plus className="text-[#7C4DFF] flex-shrink-0 mt-1" size={32} />
               <p>Services Tailored to Project Needs</p>
             </div>
             <div className="flex items-start gap-4">
               <Plus className="text-[#7C4DFF] flex-shrink-0 mt-1" size={32} />
-              <p>Robust local and regional expertise</p>
-            </div>
-            <div className="flex items-start gap-4">
-              <Plus className="text-[#7C4DFF] flex-shrink-0 mt-1" size={32} />
-              <p>Tangible high yield cost / benefit ratio</p>
+              <div>
+                <p>Specialist in:</p>
+                <ul className="mt-2 space-y-1 text-base text-white/90 list-none">
+                  <li className="flex items-center gap-2"><span className="text-[#7C4DFF]">—</span> Construction planning project controls</li>
+                  <li className="flex items-center gap-2"><span className="text-[#7C4DFF]">—</span> Forensic delay analysis</li>
+                  <li className="flex items-center gap-2"><span className="text-[#7C4DFF]">—</span> Extension of time claims</li>
+                  <li className="flex items-center gap-2"><span className="text-[#7C4DFF]">—</span> Expert witness</li>
+                </ul>
+              </div>
             </div>
           </div>
 
